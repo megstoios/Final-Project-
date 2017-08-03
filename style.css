@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ffce00 url("lazytext1.png");
+  background-size: 80em 50em;
+}
+
+[class|= wheelnav-divWheel] {
+  cursor: pointer;
+  stroke-opacity:0;
+
+}
+
+#divWheel {
+  height: 35em;
+  width: 35em;
+  position:absolute;
+  left:3em;
+  margin: auto;
+  background: url("wood2.png") no-repeat center;
+  background-size: 30em 30em;
+}
+
+#navbar {
+  position: absolute;
+  left: 18em;
+  top: 9em;
+  height: 3em;
+  font-size: 2em;
+  z-index: 2;
+
+}
+
+#main {
+  float: right;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 967px){
+
+  #main{
+    display: none;
+  }
+}
+
+span {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+span:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+.innerdiv {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.innerdiv .content {
+  background-color: #ffce00;
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  top: 3em;
+  padding: 1em;
+  position: relative;
+  border: 1px solid #f2b541;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  z-index: 3;
+}
+
+.innerdiv .content h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.close {
+  float:right;
+}
+
+main {
+  height: 60vh;
+}
+
+.arrowdiv {
+  display: inline;
+  width: 20%;
+}
+
+.arrow {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.arrowdiv.next {
+  margin-left: 73%;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+iframe {
+  padding: 0.5em;
+  width: 30%;
+  height: 20vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+footer img {
+  width: 2em;
+}
+
+footer li {
+  display: inline;
+  padding: 0.7em;
+}
